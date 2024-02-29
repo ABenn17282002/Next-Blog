@@ -2,24 +2,27 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Next.js',
+  title: "Next.js",
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="dark">
       <body>
         {/* Layout UI */}
-        <main>{children}</main>
+        <main>
+          <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
-  )
+  );
 }
