@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 import React from "react";
 
 export default function PostList({ posts }) {
@@ -10,5 +10,5 @@ export default function PostList({ posts }) {
         </li>
       ))}
     </ul>
-  )
+  );
 }
