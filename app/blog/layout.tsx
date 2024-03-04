@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function MarketLayout({
+export default function blogLayout({
   children,
 }: {
   children: React.ReactNode;
