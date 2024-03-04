@@ -1,14 +1,9 @@
-export default function RootLayout({
+import React from "react";
+
+export default function MarketLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="ja">
-      <body>
-        {/* Layout UI */}
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+  return <section>{children}</section>;
 }
