@@ -1,0 +1,7 @@
+{
+  "posts": [
+    { "slug": "1", "content": "slug1の記事です" },
+    { "slug": "2", "content": "slug2の記事です" },
+    { "slug": "3", "content": "slug3の記事です" }
+  ]
+}
