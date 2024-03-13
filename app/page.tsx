@@ -2,9 +2,11 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
+import { useChat } from "ai/react";
 
 export default function Page() {
   const router = useRouter();
+  const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
     <button
